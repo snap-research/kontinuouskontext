@@ -154,58 +154,58 @@ document.addEventListener('DOMContentLoaded', function() {
     const strengthSlider = document.getElementById('strength-slider');
     const resultImage = document.getElementById('result-image');
     
-    // Define the mapping of slider values to pre-saved images from aesthetic_model2_teaser_pixar folder
+    // Define the mapping of slider values to pre-saved images from aesthetic_model_golden_dress folder
     const imageMapping = {
         0: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_0.png',
+            src: 'assets/aesthetic_model_golden_dress/image_0.png',
             caption: 'Original image (0.0 edit strength)'
         },
         8: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_1.png',
+            src: 'assets/aesthetic_model_golden_dress/image_5.png',
             caption: 'Light editing effect (0.08 edit strength)'
         },
         17: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_2.png',
+            src: 'assets/aesthetic_model_golden_dress/image_6.png',
             caption: 'Light editing effect (0.17 edit strength)'
         },
         25: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_3.png',
+            src: 'assets/aesthetic_model_golden_dress/image_7.png',
             caption: 'Moderate editing effect (0.25 edit strength)'
         },
         33: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_4.png',
+            src: 'assets/aesthetic_model_golden_dress/image_8.png',
             caption: 'Moderate editing effect (0.33 edit strength)'
         },
         42: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_5.png',
+            src: 'assets/aesthetic_model_golden_dress/image_9.png',
             caption: 'Balanced editing effect (0.42 edit strength)'
         },
         50: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_6.png',
+            src: 'assets/aesthetic_model_golden_dress/image_10.png',
             caption: 'Balanced editing effect (0.5 edit strength)'
         },
         58: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_7.png',
+            src: 'assets/aesthetic_model_golden_dress/image_11.png',
             caption: 'Strong editing effect (0.58 edit strength)'
         },
         67: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_8.png',
+            src: 'assets/aesthetic_model_golden_dress/image_12.png',
             caption: 'Strong editing effect (0.67 edit strength)'
         },
         75: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_9.png',
+            src: 'assets/aesthetic_model_golden_dress/image_13.png',
             caption: 'Very strong editing effect (0.75 edit strength)'
         },
         83: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_10.png',
+            src: 'assets/aesthetic_model_golden_dress/image_14.png',
             caption: 'Very strong editing effect (0.83 edit strength)'
         },
         92: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_11.png',
+            src: 'assets/aesthetic_model_golden_dress/image_15.png',
             caption: 'Near maximum editing effect (0.92 edit strength)'
         },
         100: {
-            src: 'assets/aesthetic_model2_teaser_pixar/image_11.png',
+            src: 'assets/aesthetic_model_golden_dress/image_15.png',
             caption: 'Maximum editing effect (1.0 edit strength)'
         }
     };
@@ -274,18 +274,18 @@ function updateImageMapping(customMapping) {
 // Function to preload all images for smooth transitions
 function preloadImages() {
     const imagePaths = [
-        'assets/aesthetic_model2_teaser_pixar/image_0.png',
-        'assets/aesthetic_model2_teaser_pixar/image_1.png',
-        'assets/aesthetic_model2_teaser_pixar/image_2.png',
-        'assets/aesthetic_model2_teaser_pixar/image_3.png',
-        'assets/aesthetic_model2_teaser_pixar/image_4.png',
-        'assets/aesthetic_model2_teaser_pixar/image_5.png',
-        'assets/aesthetic_model2_teaser_pixar/image_6.png',
-        'assets/aesthetic_model2_teaser_pixar/image_7.png',
-        'assets/aesthetic_model2_teaser_pixar/image_8.png',
-        'assets/aesthetic_model2_teaser_pixar/image_9.png',
-        'assets/aesthetic_model2_teaser_pixar/image_10.png',
-        'assets/aesthetic_model2_teaser_pixar/image_11.png'
+        'assets/aesthetic_model_golden_dress/image_0.png',
+        'assets/aesthetic_model_golden_dress/image_5.png',
+        'assets/aesthetic_model_golden_dress/image_6.png',
+        'assets/aesthetic_model_golden_dress/image_7.png',
+        'assets/aesthetic_model_golden_dress/image_8.png',
+        'assets/aesthetic_model_golden_dress/image_9.png',
+        'assets/aesthetic_model_golden_dress/image_10.png',
+        'assets/aesthetic_model_golden_dress/image_11.png',
+        'assets/aesthetic_model_golden_dress/image_12.png',
+        'assets/aesthetic_model_golden_dress/image_13.png',
+        'assets/aesthetic_model_golden_dress/image_14.png',
+        'assets/aesthetic_model_golden_dress/image_15.png'
     ];
     
     imagePaths.forEach(src => {
