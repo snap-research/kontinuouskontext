@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontinuous Kontext</title>
+    <link rel="icon" type="image/png" href="assets/teaser.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <!-- Left column: Paper details -->
+                <div class="paper-details">
+                    <h1 class="title"><span class="kontinuous-kontext">Kontinuous Kontext</span>: Continuous Strength
+                        Control for Instruction-based Image Editing</h1>
+                    
+                    <!-- Authors directly below title -->
+                    <div class="header-authors">
+                        <span class="header-author"><a href="https://rishubhpar.github.io/" style="color: inherit; text-decoration: none;">Rishubh Parihar</a></span>
+                        <span class="header-author"><a href="https://orpatashnik.github.io/" style="color: inherit; text-decoration: none;">Or Patashnik</a></span>
+                        <span class="header-author">Daniil Ostashev</span>
+                        <span class="header-author"><a href="https://cds.iisc.ac.in/faculty/venky/" style="color: inherit; text-decoration: none;">R Venkatesh Babu</a></span>
+                        <span class="header-author"><a href="https://danielcohenor.com/" style="color: inherit; text-decoration: none;">Daniel Cohen-Or</a></span>
+                        <span class="header-author"><a href="https://wangkua1.github.io/" style="color: inherit; text-decoration: none;">Kuan-Chieh Wang</a></span>
+                    </div>
+                    
+                    <!-- Affiliations -->
+                    <div class="header-affiliations">
+                        <span class="header-affiliation">Snap Research</span><br>
+                        <span class="header-affiliation">IISc Bangalore</span><br>
+                        <span class="header-affiliation">Tel Aviv University</span>
+                    </div>
+
+                    <!-- TLDR Section -->
+                    <div class="tldr-section">
+                        <h3 class="tldr-title">TLDR</h3>
+                        <p class="tldr-content">
+                             We introduce <span class="kontinuous-kontext">Kontinuous Kontext</span>, an instruction-driven editing model that provides a new dimension of <span class="highlight-text">continuous control over edit strength</span>, enabling users to adjust edits gradually from no change to a fully realized result in a smooth and continuous manner.
+                        </p>
+                    </div>
+                    
+                    <!-- Links -->
+                    <div class="links">
+                        <a href="#" class="link-button">Paper</a>
+                        <a href="#" class="link-button">Code</a>
+                        <a href="#" class="link-button">Dataset</a>
+                    </div>
+                </div>
+                
+                <!-- Right column: Interactive Demo -->
+                <div class="teaser-column">
+                    <!-- Single unified container for teaser -->
+                    <div class="teaser-container">
+                        <!-- Predefined instruction display -->
+                        <div class="simple-instruction">
+                            'Transform the scene into a 3D animation style' 
+                        </div>
+                        
+                        <!-- Strength control slider -->
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="strength-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                        
+                        <!-- Result display -->
+                        <div class="edit-result" id="edit-result">
+                            <img id="result-image" src="assets/aesthetic_model2_teaser_pixar/image_0.png" alt="Edited Result" class="result-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Abstract Section -->
+        <section class="abstract-section">
+            <h2>Abstract</h2>
+            <p class="abstract-text">
+                Instruction-based image editing offers a powerful and intuitive way to manipulate images through natural language. 
+                Yet, relying solely on text instructions limits fine-grained control over the extent of edits. We introduce 
+                <span class="kontinuous-kontext">Kontinuous Kontext</span>, an instruction-driven editing model that provides a new dimension of control over edit strength,
+                 enabling users to adjust edits gradually from no change to a fully realized result in a smooth and continuous manner.
+                <span class="kontinuous-kontext">Kontinuous Kontext</span> extends a state-of-the-art image editing model to accept an additional input, a scalar edit strength
+                which is then paired with the edit instruction, enabling explicit control over the extent of the edit. To inject this scalar information, 
+                we train a lightweight projector network that maps the input scalar and the edit instruction to coefficients in the model's modulation space. 
+                For training our model, we synthesize a diverse dataset of image-edit-instruction-strength quadruplets using existing generative models, 
+                followed by a filtering stage to ensure quality and consistency. <span class="kontinuous-kontext">Kontinuous Kontext</span> provides a unified approach for fine-grained control
+                 over edit strength for instruction driven editing from subtle to strong across diverse operations such as stylization, attribute, material, 
+                 background, and shape changes, without requiring attribute-specific training.
+            </p>
+            
+            <!-- Inline teaser GIF -->
+            <div class="inline-teaser-container">
+                <video id="teaser-video" src="assets/teaser.mov" alt="Kontinuous Kontext Interactive Interface Demo" class="inline-teaser-video" autoplay muted controls></video>
+            </div>
+        </section>
+
+        <!-- Interactive Examples Section -->
+        <section class="interactive-examples">
+            <h2>Strength Controlled Image Editing</h2>
+            <div class="examples-grid-1x3">
+                <!-- Example 1: Yellow Lamp -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Turn on the hanging lamp with bright yellow light'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="lamp-yellow-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="lamp-yellow-image" src="assets/lamp_yellow/image_0.png" alt="Yellow Lamp Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Example 2: Resize the car -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Reduce the size of the object'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="car-resize-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="car-resize-image" src="assets/car_reduce_size2/image_0.png" alt="Resize Car Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Example 3: Change hair to red -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Change her hair to be curly and red'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="person-blur-red-hairs-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="person-blur-red-hairs-image" src="assets/person_blur_red_hairs/image_0.png" alt="Red Hair Result" class="result-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivation Section -->
+        <section class="motivation-section">
+            <h2>Motivation</h2>
+            <div class="motivation-content">
+                <p class="motivation-text">
+                    We extend an instruction-driven image editing model to accept additional scalar input <strong>s</strong> representing the extent of the editalong with the instruction.
+                    We formulate our approach as a simple supervised training problem, where we first generate a synthetic dataset of image-edit-instruction-strength tuples using existing generative models,
+                    followed by fine-tuning a state-of-the-art instruction-driven image editing model to obtain fine-grained strength control.
+                </p>
+            </div>
+        </section>
+
+        <!-- Dataset Construction Section -->
+        <section class="dataset-section">
+            <h2>Dataset Construction</h2>
+            <div class="dataset-content">
+                <p class="dataset-description">
+                    As obtaining a real dataset of image edit and strength pairs is challenging, we generate a synthetic dataset using generative models to obtain this training signal. 
+                    Our dataset construction pipeline consists of three main steps:
+                </p>
+            </div>
+            
+            <!-- Dataset Subsection 1: Image Collection & Instruction Generation -->
+            <div class="dataset-subsection">
+                <h3>Step a): Generating image edting pairs</h3>
+                <div class="dataset-content">
+                    <p class="dataset-description">
+                        We start with a dataset of diverse source images and generate edit instructions using a Vision Language Model (VLM). 
+                        We use these instructions to edit the source images using Flux Kontext, creating our initial image-instruction pairs.
+                    </p>
+                    <img src="assets/dataset-website-a.svg" alt="Image Collection & Instruction Generation" class="dataset-img dataset-img-a">
+                </div>
+            </div>
+
+            <!-- Dataset Subsection 2: Diffusion-Based Image Morphing -->
+            <div class="dataset-subsection">
+                <h3>Step b): Generating edits with intermediate strength using image morphing</h3>
+                <div class="dataset-content">
+                    <p class="dataset-description">
+                        In the second step, we use the source and edited images to generate interpolations between them using a 
+                        diffusion-based image morphing model. This creates smooth transitions across different strength levels.
+                    </p>
+                    <img src="assets/dataset-website-b.svg" alt="Diffusion-Based Image Morphing" class="dataset-img dataset-img-b">
+                </div>
+            </div>
+
+            <!-- Dataset Subsection 3: Quality Filtering & Refinement -->
+            <div class="dataset-subsection">
+                <h3>Step c): Filtering poor quality samples</h3>
+                <div class="dataset-content">
+                    <p class="dataset-description">
+                        The diffusion-based image morphing can generate inconsistent transitions or artifacts and suffer from identity preservation issues. 
+                        To address these inconsistencies, we apply extensive filtering to remove poor quality samples. 
+                        Finally, we obtain 60K high-quality image edit sequences with varying editing categories.
+                    </p>
+                    <img src="assets/dataset-website-c.svg" alt="Quality Filtering & Refinement" class="dataset-img dataset-img-c">
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section -->
+        <section class="method-section">
+            <h2>Method</h2>
+            <div class="method-content">
+                <p class="method-overview">
+                    <span class="kontinuous-kontext">Kontinuous Kontext</span> extends a state-of-the-art image editing model Flux Kontext to accept an additional scalar input 
+                    representing edit strength, enabling explicit control over the extent of edit while maintaining high-quality results.
+                    
+                    In our experiments, we found that the modulation space of the Flux Kontext model is highly semantic and allows for control over the edit strengths.
+                    We design a lightweight projector network that maps the scalar strength values to the adjustments in the modulation parameters of the text tokens.
+                    The projector additionally takes the pooled clip embeddings of the edit instruction as input to make the modulation adaptive based on the edit type. 
+                    To make the model more expressive and learn from our rich dataset, we train a LoRA on all the attention layers along with the projector network with 
+                    a standard diffusion denoising loss. 
+                </p>
+                
+                <img src="assets/kontinuous_kontext_method.svg" alt="Method Architecture" class="method-img">
+            </div>
+        </section>
+
+        <!-- Results Section 1 -->
+        <section class="interactive-examples">
+            <h2>Results</h2>
+            <div class="examples-grid">
+                <!-- Result 0: Fur Jacket on Bike -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform his jacket into a blue fluffy fur jacket'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="man-fur-jacket-bike-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="man-fur-jacket-bike-image" src="assets/man_fur_jacket_bike/image_0.png" alt="Fur Jacket Bike Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Result 2: Venice Vegetation -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Grow vegetation on the walls of the buildings on both sides'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="venice-vegetation-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="venice-vegetation-image" src="assets/venice1_Grow_vegetation_on_t_3/image_0.png" alt="Venice Vegetation Result" class="result-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section 2 -->
+        <section class="interactive-examples">
+            <div class="examples-grid">
+                <!-- Result 3: Tibet Autumn -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform the scene into an autumn season with dense leaves falling and on the ground'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="tibbet-autumn-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="tibbet-autumn-image" src="assets/tibbet_autumn/image_0.png" alt="Tibet Autumn Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Result 1: Panda to Husky -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform the panda into a husky dog'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="panda-husky-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="panda-husky-image" src="assets/panda_indoor2_husky_dog/image_0.png" alt="Panda Husky Result" class="result-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section 3 -->
+        <section class="interactive-examples">
+            <div class="examples-grid">
+                <!-- Result 5: Sunlight -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Reimagine the scene as if it is captured in daytime with heavy sunlight'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="model2-sunlight-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="model2-sunlight-image" src="assets/model2_sunlight/image_0.png" alt="Sunlight Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Result 9: Aviator Glasses -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform the glasses into aviator sunglasses'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="glasses-aviator-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="glasses-aviator-image" src="assets/glasses_aviator/image_0.png" alt="Aviator Glasses Result" class="result-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section 5 -->
+        <section class="interactive-examples">
+            <div class="examples-grid">
+                <!-- Result 10: Ghibli Style -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform the scene into studio Ghibli style animation'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="horse-uncle-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="horse-uncle-image" src="assets/horse_uncle/image_0.png" alt="Ghibli Style Result" class="result-img">
+                    </div>
+                </div>
+
+                <!-- Result 12: Winter Snow -->
+                <div class="example-tile">
+                    <div class="example-instruction">
+                        'Transform the scene into a winter season with heavy snowfall'
+                    </div>
+                    <div class="example-slider-container">
+                        <div class="slider-container">
+                            <span class="strength-label">0.0</span>
+                            <input type="range" id="enfield-winter-snow-slider" class="strength-slider" min="0" max="100" value="0" step="1">
+                            <span class="strength-label">1.0</span>
+                        </div>
+                    </div>
+                    <div class="example-result">
+                        <img id="enfield-winter-snow-image" src="assets/enfield3_winter_snow/image_0.png" alt="Winter Snow Result" class="result-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <!-- Footer
+        <footer class="footer">
+            <p>
+        @misc{kontinuouskontext,
+                title={Kontinuous Kontext},
+                author={Team Kontinuous Kontext},
+                journal={Arxiv},
+                year={2025} 
+         }
+             </p>
+        </footer> -->
+
+    </div>
+
+    <!-- Citation Footer -->
+    <footer class="citation-footer">
+        <div class="container">
+            <h3>Citation</h3>
+            <div class="bibtex-container">
+                <pre class="bibtex-code">@article{kontinuous_kontext_2025,
+        title={Kontinuous Kontext: Continuous Strength Control for Instruction-based Image Editing},
+        author={R Parihar, O Patashnik, D Ostashev, R Venkatesh Babu, D Cohen-Or, and J Wang},
+        journal={Arxiv},
+        year={2025}
+}</pre>
+                <button class="copy-bibtex-btn" onclick="copyBibTeX()">Copy BibTeX</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
