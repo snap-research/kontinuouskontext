@@ -329,19 +329,19 @@ function preloadStrengthControlledImages() {
         'assets/car_reduce_size2/image_9.png',
         'assets/car_reduce_size2/image_10.png',
         'assets/car_reduce_size2/image_11.png',
-        // Person blur red hairs images (12 images)
-        'assets/person_blur_red_hairs/image_0.png',
-        'assets/person_blur_red_hairs/image_1.png',
-        'assets/person_blur_red_hairs/image_2.png',
-        'assets/person_blur_red_hairs/image_3.png',
-        'assets/person_blur_red_hairs/image_4.png',
-        'assets/person_blur_red_hairs/image_5.png',
-        'assets/person_blur_red_hairs/image_6.png',
-        'assets/person_blur_red_hairs/image_7.png',
-        'assets/person_blur_red_hairs/image_8.png',
-        'assets/person_blur_red_hairs/image_9.png',
-        'assets/person_blur_red_hairs/image_10.png',
-        'assets/person_blur_red_hairs/image_11.png'
+        // Dog boy laugh images (12 images)
+        'assets/dog_boy_laugh/image_0.png',
+        'assets/dog_boy_laugh/image_1.png',
+        'assets/dog_boy_laugh/image_2.png',
+        'assets/dog_boy_laugh/image_3.png',
+        'assets/dog_boy_laugh/image_4.png',
+        'assets/dog_boy_laugh/image_5.png',
+        'assets/dog_boy_laugh/image_6.png',
+        'assets/dog_boy_laugh/image_7.png',
+        'assets/dog_boy_laugh/image_8.png',
+        'assets/dog_boy_laugh/image_9.png',
+        'assets/dog_boy_laugh/image_10.png',
+        'assets/dog_boy_laugh/image_11.png'
     ];
     
     strengthControlledImagePaths.forEach(path => {
@@ -379,18 +379,19 @@ function preloadExampleImages() {
         'assets/glasses_aviator/image_9.png',
         'assets/glasses_aviator/image_10.png',
         'assets/glasses_aviator/image_11.png',
-        // Lamp Yellow images (11 images)
-        'assets/lamp_yellow/image_0.png',
-        'assets/lamp_yellow/image_1.png',
-        'assets/lamp_yellow/image_2.png',
-        'assets/lamp_yellow/image_3.png',
-        'assets/lamp_yellow/image_4.png',
-        'assets/lamp_yellow/image_5.png',
-        'assets/lamp_yellow/image_6.png',
-        'assets/lamp_yellow/image_7.png',
-        'assets/lamp_yellow/image_8.png',
-        'assets/lamp_yellow/image_9.png',
-        'assets/lamp_yellow/image_10.png',
+        // Light Lamp Blue Side images (12 images)
+        'assets/light_lamp_blue_side/image_0.png',
+        'assets/light_lamp_blue_side/image_1.png',
+        'assets/light_lamp_blue_side/image_2.png',
+        'assets/light_lamp_blue_side/image_3.png',
+        'assets/light_lamp_blue_side/image_4.png',
+        'assets/light_lamp_blue_side/image_5.png',
+        'assets/light_lamp_blue_side/image_6.png',
+        'assets/light_lamp_blue_side/image_7.png',
+        'assets/light_lamp_blue_side/image_8.png',
+        'assets/light_lamp_blue_side/image_9.png',
+        'assets/light_lamp_blue_side/image_10.png',
+        'assets/light_lamp_blue_side/image_11.png',
         // Man Fur Jacket Bike images (9 images)
         'assets/man_fur_jacket_bike/image_0.png',
         'assets/man_fur_jacket_bike/image_1.png',
@@ -724,27 +725,27 @@ document.addEventListener('DOMContentLoaded', function() {
             92: 'assets/car_reduce_size2/image_11.png',
             100: 'assets/car_reduce_size2/image_11.png'
         },
-        'person-blur-red-hairs': {
-            0: 'assets/person_blur_red_hairs/image_0.png',
-            8: 'assets/person_blur_red_hairs/image_1.png',
-            17: 'assets/person_blur_red_hairs/image_2.png',
-            25: 'assets/person_blur_red_hairs/image_3.png',
-            33: 'assets/person_blur_red_hairs/image_4.png',
-            42: 'assets/person_blur_red_hairs/image_5.png',
-            50: 'assets/person_blur_red_hairs/image_6.png',
-            58: 'assets/person_blur_red_hairs/image_7.png',
-            67: 'assets/person_blur_red_hairs/image_8.png',
-            75: 'assets/person_blur_red_hairs/image_9.png',
-            83: 'assets/person_blur_red_hairs/image_10.png',
-            92: 'assets/person_blur_red_hairs/image_11.png',
-            100: 'assets/person_blur_red_hairs/image_11.png'
+        'dog-boy-laugh': {
+            0: 'assets/dog_boy_laugh/image_0.png',
+            8: 'assets/dog_boy_laugh/image_1.png',
+            17: 'assets/dog_boy_laugh/image_2.png',
+            25: 'assets/dog_boy_laugh/image_3.png',
+            33: 'assets/dog_boy_laugh/image_4.png',
+            42: 'assets/dog_boy_laugh/image_5.png',
+            50: 'assets/dog_boy_laugh/image_6.png',
+            58: 'assets/dog_boy_laugh/image_7.png',
+            67: 'assets/dog_boy_laugh/image_8.png',
+            75: 'assets/dog_boy_laugh/image_9.png',
+            83: 'assets/dog_boy_laugh/image_10.png',
+            92: 'assets/dog_boy_laugh/image_11.png',
+            100: 'assets/dog_boy_laugh/image_11.png'
         }
     };
 
     // Setup the "Strength Controlled Image Editing" sliders
     setupExampleSlider('horse-uncle', 'horse-uncle-slider', 'horse-uncle-image', strengthControlledMappings['horse-uncle']);
     setupExampleSlider('car-resize', 'car-resize-slider', 'car-resize-image', strengthControlledMappings['car-resize']);
-    setupExampleSlider('person-blur-red-hairs', 'person-blur-red-hairs-slider', 'person-blur-red-hairs-image', strengthControlledMappings['person-blur-red-hairs']);
+    setupExampleSlider('dog-boy-laugh', 'dog-boy-laugh-slider', 'dog-boy-laugh-image', strengthControlledMappings['dog-boy-laugh']);
 
     // Define image mappings for all 15 results
     const exampleMappings = {
@@ -778,19 +779,20 @@ document.addEventListener('DOMContentLoaded', function() {
             92: 'assets/glasses_aviator/image_11.png',
             100: 'assets/glasses_aviator/image_11.png'
         },
-        'lamp-yellow': {
-            0: 'assets/lamp_yellow/image_0.png',
-            9: 'assets/lamp_yellow/image_1.png',
-            18: 'assets/lamp_yellow/image_2.png',
-            27: 'assets/lamp_yellow/image_3.png',
-            36: 'assets/lamp_yellow/image_4.png',
-            45: 'assets/lamp_yellow/image_5.png',
-            55: 'assets/lamp_yellow/image_6.png',
-            64: 'assets/lamp_yellow/image_7.png',
-            73: 'assets/lamp_yellow/image_8.png',
-            82: 'assets/lamp_yellow/image_9.png',
-            91: 'assets/lamp_yellow/image_10.png',
-            100: 'assets/lamp_yellow/image_10.png'
+        'lamp-blue': {
+            0: 'assets/light_lamp_blue_side/image_0.png',
+            8: 'assets/light_lamp_blue_side/image_1.png',
+            17: 'assets/light_lamp_blue_side/image_2.png',
+            25: 'assets/light_lamp_blue_side/image_3.png',
+            33: 'assets/light_lamp_blue_side/image_4.png',
+            42: 'assets/light_lamp_blue_side/image_5.png',
+            50: 'assets/light_lamp_blue_side/image_6.png',
+            58: 'assets/light_lamp_blue_side/image_7.png',
+            67: 'assets/light_lamp_blue_side/image_8.png',
+            75: 'assets/light_lamp_blue_side/image_9.png',
+            83: 'assets/light_lamp_blue_side/image_10.png',
+            92: 'assets/light_lamp_blue_side/image_11.png',
+            100: 'assets/light_lamp_blue_side/image_11.png'
         },
         'man-fur-jacket-bike': {
             0: 'assets/man_fur_jacket_bike/image_0.png',
@@ -898,7 +900,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setup all 15 sliders
     setupExampleSlider('jacket-leather', 'jacket-leather-slider', 'jacket-leather-image', exampleMappings['jacket-leather']);
     setupExampleSlider('glasses-aviator', 'glasses-aviator-slider', 'glasses-aviator-image', exampleMappings['glasses-aviator']);
-    setupExampleSlider('lamp-yellow', 'lamp-yellow-slider', 'lamp-yellow-image', exampleMappings['lamp-yellow']);
+    setupExampleSlider('lamp-blue', 'lamp-blue-slider', 'lamp-blue-image', exampleMappings['lamp-blue']);
     setupExampleSlider('man-fur-jacket-bike', 'man-fur-jacket-bike-slider', 'man-fur-jacket-bike-image', exampleMappings['man-fur-jacket-bike']);
     setupExampleSlider('model2-sunlight', 'model2-sunlight-slider', 'model2-sunlight-image', exampleMappings['model2-sunlight']);
     setupExampleSlider('panda-husky', 'panda-husky-slider', 'panda-husky-image', exampleMappings['panda-husky']);
