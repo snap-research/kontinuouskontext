@@ -402,7 +402,7 @@ function preloadExampleImages() {
         'assets/man_fur_jacket_bike/image_6.png',
         'assets/man_fur_jacket_bike/image_7.png',
         'assets/man_fur_jacket_bike/image_8.png',
-        // Model2 Sunlight images (12 images)
+        // Model2 Sunlight images (7 images)
         'assets/model2_sunlight/image_0.png',
         'assets/model2_sunlight/image_1.png',
         'assets/model2_sunlight/image_2.png',
@@ -410,11 +410,6 @@ function preloadExampleImages() {
         'assets/model2_sunlight/image_4.png',
         'assets/model2_sunlight/image_5.png',
         'assets/model2_sunlight/image_6.png',
-        'assets/model2_sunlight/image_7.png',
-        'assets/model2_sunlight/image_8.png',
-        'assets/model2_sunlight/image_9.png',
-        'assets/model2_sunlight/image_10.png',
-        'assets/model2_sunlight/image_11.png',
         // Panda Indoor2 Husky Dog images (12 images)
         'assets/panda_indoor2_husky_dog/image_0.png',
         'assets/panda_indoor2_husky_dog/image_1.png',
@@ -807,18 +802,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'model2-sunlight': {
             0: 'assets/model2_sunlight/image_0.png',
-            8: 'assets/model2_sunlight/image_1.png',
-            17: 'assets/model2_sunlight/image_2.png',
-            25: 'assets/model2_sunlight/image_3.png',
-            33: 'assets/model2_sunlight/image_4.png',
-            42: 'assets/model2_sunlight/image_5.png',
-            50: 'assets/model2_sunlight/image_6.png',
-            58: 'assets/model2_sunlight/image_7.png',
-            67: 'assets/model2_sunlight/image_8.png',
-            75: 'assets/model2_sunlight/image_9.png',
-            83: 'assets/model2_sunlight/image_10.png',
-            92: 'assets/model2_sunlight/image_11.png',
-            100: 'assets/model2_sunlight/image_11.png'
+            17: 'assets/model2_sunlight/image_1.png',
+            33: 'assets/model2_sunlight/image_2.png',
+            50: 'assets/model2_sunlight/image_3.png',
+            67: 'assets/model2_sunlight/image_4.png',
+            83: 'assets/model2_sunlight/image_5.png',
+            100: 'assets/model2_sunlight/image_6.png'
         },
         'panda-husky': {
             0: 'assets/panda_indoor2_husky_dog/image_0.png',
