@@ -364,7 +364,6 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: opacity 0.3s ease;
     margin: 0;
 }
 
@@ -506,7 +505,6 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: opacity 0.3s ease;
 }
 
 /* Dataset Section */
@@ -1055,7 +1053,6 @@ body {
     height: auto;
     max-height: 300px;
     border-radius: 11px;
-    transition: opacity 0.3s ease;
     transform: scale(1.8);
     transform-origin: center;
 }

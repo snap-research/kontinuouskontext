@@ -228,21 +228,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const imageData = imageMapping[closestValue];
             
             if (imageData) {
-                // Add subtle fade effect during image change
-                resultImage.style.opacity = '0.8';
-                
-                // Change image source
+                // Change image source directly without fade
                 resultImage.src = imageData.src;
-                
-                // Handle image load to restore opacity
-                resultImage.onload = function() {
-                    this.style.opacity = '1';
-                };
                 
                 // Handle image error (fallback to first teaser image)
                 resultImage.onerror = function() {
                     this.src = 'assets/teaser/row_00_col_00.png';
-                    this.style.opacity = '1';
                 };
             }
         });
@@ -662,21 +653,12 @@ function setupResultSlider(type, sliderId, imageId, imageMapping) {
             const imageSrc = imageMapping[closestValue];
             
             if (imageSrc) {
-                // Add subtle fade effect during image change
-                image.style.opacity = '0.8';
-                
-                // Change image source
+                // Change image source directly without fade
                 image.src = imageSrc;
-                
-                // Handle image load to restore opacity
-                image.onload = function() {
-                    this.style.opacity = '1';
-                };
                 
                 // Handle image error (fallback to first image)
                 image.onerror = function() {
                     this.src = imageMapping[0];
-                    this.style.opacity = '1';
                 };
             }
         });
@@ -970,21 +952,12 @@ function setupExampleSlider(type, sliderId, imageId, imageMapping) {
             const imageSrc = imageMapping[closestValue];
             
             if (imageSrc) {
-                // Add subtle fade effect during image change
-                image.style.opacity = '0.8';
-                
-                // Change image source
+                // Change image source directly without fade
                 image.src = imageSrc;
-                
-                // Handle image load to restore opacity
-                image.onload = function() {
-                    this.style.opacity = '1';
-                };
                 
                 // Handle image error (fallback to first image)
                 image.onerror = function() {
                     this.src = imageMapping[0];
-                    this.style.opacity = '1';
                 };
             }
         });
