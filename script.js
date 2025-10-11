@@ -403,6 +403,19 @@ function preloadExampleImages() {
         'assets/jackson/image_6.png',
         'assets/jackson/image_7.png',
         'assets/jackson/image_8.png',
+        // Jackson Fluffy images (12 images)
+        'assets/jackson_fluffy/image_0.png',
+        'assets/jackson_fluffy/image_1.png',
+        'assets/jackson_fluffy/image_2.png',
+        'assets/jackson_fluffy/image_3.png',
+        'assets/jackson_fluffy/image_4.png',
+        'assets/jackson_fluffy/image_5.png',
+        'assets/jackson_fluffy/image_6.png',
+        'assets/jackson_fluffy/image_7.png',
+        'assets/jackson_fluffy/image_8.png',
+        'assets/jackson_fluffy/image_9.png',
+        'assets/jackson_fluffy/image_10.png',
+        'assets/jackson_fluffy/image_11.png',
         // Model2 Sunlight images (7 images)
         'assets/model2_sunlight/image_0.png',
         'assets/model2_sunlight/image_1.png',
@@ -886,6 +899,21 @@ document.addEventListener('DOMContentLoaded', function() {
             75: 'assets/jackson/image_6.png',
             87: 'assets/jackson/image_7.png',
             100: 'assets/jackson/image_8.png'
+        },
+        'jackson-fluffy': {
+            0: 'assets/jackson_fluffy/image_0.png',
+            8: 'assets/jackson_fluffy/image_1.png',
+            17: 'assets/jackson_fluffy/image_2.png',
+            25: 'assets/jackson_fluffy/image_3.png',
+            33: 'assets/jackson_fluffy/image_4.png',
+            42: 'assets/jackson_fluffy/image_5.png',
+            50: 'assets/jackson_fluffy/image_6.png',
+            58: 'assets/jackson_fluffy/image_7.png',
+            67: 'assets/jackson_fluffy/image_8.png',
+            75: 'assets/jackson_fluffy/image_9.png',
+            83: 'assets/jackson_fluffy/image_10.png',
+            92: 'assets/jackson_fluffy/image_11.png',
+            100: 'assets/jackson_fluffy/image_11.png'
         }
     };
     
@@ -901,6 +929,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupExampleSlider('venice-vegetation', 'venice-vegetation-slider', 'venice-vegetation-image', exampleMappings['venice-vegetation']);
     setupExampleSlider('enfield-winter-snow', 'enfield-winter-snow-slider', 'enfield-winter-snow-image', exampleMappings['enfield-winter-snow']);
     setupExampleSlider('jackson', 'jackson-slider', 'jackson-image', exampleMappings['jackson']);
+    setupExampleSlider('jackson-fluffy', 'jackson-fluffy-slider', 'jackson-fluffy-image', exampleMappings['jackson-fluffy']);
 });
 
 // Copy BibTeX function
