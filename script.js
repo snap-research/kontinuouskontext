@@ -393,6 +393,16 @@ function preloadExampleImages() {
         'assets/man_fur_jacket_bike/image_6.png',
         'assets/man_fur_jacket_bike/image_7.png',
         'assets/man_fur_jacket_bike/image_8.png',
+        // Jackson images (9 images)
+        'assets/jackson/image_0.png',
+        'assets/jackson/image_1.png',
+        'assets/jackson/image_2.png',
+        'assets/jackson/image_3.png',
+        'assets/jackson/image_4.png',
+        'assets/jackson/image_5.png',
+        'assets/jackson/image_6.png',
+        'assets/jackson/image_7.png',
+        'assets/jackson/image_8.png',
         // Model2 Sunlight images (7 images)
         'assets/model2_sunlight/image_0.png',
         'assets/model2_sunlight/image_1.png',
@@ -865,6 +875,17 @@ document.addEventListener('DOMContentLoaded', function() {
             83: 'assets/enfield3_winter_snow/image_10.png',
             92: 'assets/enfield3_winter_snow/image_11.png',
             100: 'assets/enfield3_winter_snow/image_11.png'
+        },
+        'jackson': {
+            0: 'assets/jackson/image_0.png',
+            12: 'assets/jackson/image_1.png',
+            25: 'assets/jackson/image_2.png',
+            37: 'assets/jackson/image_3.png',
+            50: 'assets/jackson/image_4.png',
+            62: 'assets/jackson/image_5.png',
+            75: 'assets/jackson/image_6.png',
+            87: 'assets/jackson/image_7.png',
+            100: 'assets/jackson/image_8.png'
         }
     };
     
@@ -879,6 +900,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupExampleSlider('tibbet-autumn', 'tibbet-autumn-slider', 'tibbet-autumn-image', exampleMappings['tibbet-autumn']);
     setupExampleSlider('venice-vegetation', 'venice-vegetation-slider', 'venice-vegetation-image', exampleMappings['venice-vegetation']);
     setupExampleSlider('enfield-winter-snow', 'enfield-winter-snow-slider', 'enfield-winter-snow-image', exampleMappings['enfield-winter-snow']);
+    setupExampleSlider('jackson', 'jackson-slider', 'jackson-image', exampleMappings['jackson']);
 });
 
 // Copy BibTeX function
