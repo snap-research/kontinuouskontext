@@ -41,7 +41,7 @@ Instruction-based image editing offers a powerful and intuitive way to manipulat
 Follow these steps to run inference with a pretrained model.
 
 1.  **Download Model Weights**
-    Download the model weights from here(https://huggingface.co/RishubhPar/KontinuousKontextWeights) and copy them into the `./model_weights/` folder.
+    Download the model weights from [here](https://huggingface.co/RishubhPar/KontinuousKontextWeights) and copy them into the `./model_weights/` folder.
 
 2.  **Run Inference**
     Execute the `infer.sh` script. This will run the edits on the images from the `./assets/` folder using the prompts defined in the Python script.
