@@ -1,0 +1,227 @@
+Snap Inc. Non-Commercial License
+
+Copyright (c) 2025 Snap Inc. All rights reserved.
+
+This sample code is made available by Snap Inc. for non-commercial, research purposes only. 
+
+Non-commercial means not intended for or directed towards commercial advantage or monetary compensation. Research purposes mean solely for academic study, instruction, or non-commercial research, testing or validation. 
+
+No commercial license, whether implied or otherwise, is granted in or to this sample code or any related patents, unless you have entered into a separate agreement with Snap Inc. for such rights.
+
+This sample code is provided as-is, without warranty of any kind, express or implied, including any warranties of merchantability, title, fitness for a particular purpose, non-infringement, or that the code is free of defects, errors or viruses. In no event will Snap Inc. be liable for any damages or losses of any kind arising from this sample code or your use thereof.
+
+Any redistribution of this sample code, including in binary form, must retain or reproduce this license text including all copyright notices, conditions and disclaimers. 
+
+Third-Party Software
+
+This sample code may require, link to or interact with the following third-party components, each of which is governed by its own respective license:
+
+
+absl-py Copyright 2025 Google LLC. The absl-py project can be found at: https://github.com/abseil/abseil-py. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/abseil/abseil-py/blob/master/LICENSE.
+
+accelerate Copyright 2022-2025 The HuggingFace Inc. team. The accelerate project can be found at: https://github.com/huggingface/accelerate. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/accelerate/blob/main/LICENSE.
+
+aiofiles Copyright 2017-2025 aio-libs. The aiofiles project can be found at: https://github.com/aio-libs/aiofiles. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/aio-libs/aiofiles/blob/main/LICENSE.
+
+annotated-types Copyright 2023-2025 Tushar Sadhwani. The annotated-types project can be found at: https://github.com/pydantic/annotated-types. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/pydantic/annotated-types/blob/main/LICENSE.
+
+anyio Copyright 2019-2025 Alex Grönholm. The anyio project can be found at: https://github.com/agronholm/anyio. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/agronholm/anyio/blob/master/LICENSE.
+
+antlr4-python3-runtime Copyright 2012-2025 Terence Parr. The antlr4-python3-runtime project can be found at: https://github.com/antlr/antlr4. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/antlr/antlr4/blob/master/LICENSE.txt.
+
+asttokens Copyright 2017-2025 G. S. B. The asttokens project can be found at: https://github.com/gruns/asttokens. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/gruns/asttokens/blob/master/LICENSE.txt.
+
+astunparse Copyright 2017-2025 astunparse authors. The astunparse project can be found at: https://github.com/simonpercivall/astunparse. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/simonpercivall/astunparse/blob/master/LICENSE.
+
+async-timeout Copyright 2025 Andrew Svetlov. The async-timeout project can be found at: https://github.com/aio-libs/async-timeout. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/aio-libs/async-timeout/blob/master/LICENSE.txt.
+
+attrs Copyright 2015-2025 Hynek Schlawack. The attrs project can be found at: https://github.com/python-attrs/attrs. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python-attrs/attrs/blob/main/LICENSE.
+
+bitsandbytes Copyright 2025 Tim Dettmers. The bitsandbytes project can be found at: https://github.com/TimDettmers/bitsandbytes. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/TimDettmers/bitsandbytes/blob/main/LICENSE.
+
+brotli Copyright 2025 Google LLC. The brotli project can be found at: https://github.com/google/brotli. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/google/brotli/blob/master/LICENSE.
+
+cachetools Copyright 2017-2025 Thomas Kemmer. The cachetools project can be found at: https://github.com/tkem/cachetools. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/tkem/cachetools/blob/master/LICENSE.
+
+certifi Copyright 2025 Mozilla Foundation. The certifi project can be found at: https://github.com/certifi/python-certifi. This software is licensed under the Mozilla Public License, Version 2.0. A copy of the license can be found at: https://www.mozilla.org/en-US/MPL/2.0/.
+
+charset-normalizer Copyright 2021-2025 Ahmed TAHRI. The charset-normalizer project can be found at: https://github.com/charset-normalizer/charset-normalizer. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/charset-normalizer/charset-normalizer/blob/main/LICENSE.
+
+click Copyright 2025 Pallets. The click project can be found at: https://github.com/pallets/click. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/pallets/click/blob/main/LICENSE.rst.
+
+colorlog Copyright 2025 Scott Barnett. The colorlog project can be found at: https://github.com/borntorun/colorlog. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/borntorun/colorlog/blob/master/LICENSE.rst.
+
+decorator Copyright 2025 Michele Simionato. The decorator project can be found at: https://github.com/micheles/decorator. This software is licensed under the BSD 2-Clause "Simplified" License. A copy of the license can be found at: https://github.com/micheles/decorator/blob/master/LICENSE.
+
+diffusers Copyright 2025 The HuggingFace Inc. team. The diffusers project can be found at: https://github.com/huggingface/diffusers. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/diffusers/blob/main/LICENSE.
+
+exceptiongroup Copyright 2022-2025 Python Software Foundation. The exceptiongroup project can be found at: https://github.com/python-exceptiongroup/exceptiongroup. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python-exceptiongroup/exceptiongroup/blob/main/LICENSE.
+
+fastapi Copyright 2018-2025 Sebastian Ramirez. The fastapi project can be found at: https://github.com/tiangolo/fastapi. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/tiangolo/fastapi/blob/master/LICENSE.
+
+ffmpy Copyright 2013-2025 ffmpy contributors. The ffmpy project can be found at: https://github.com/globocom/ffmpy. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/globocom/ffmpy/blob/master/LICENSE.
+
+filelock Copyright 2025 tox-dev. The filelock project can be found at: https://github.com/tox-dev/py-filelock. This software is licensed under The Unlicense. A copy of the license can be found at: https://github.com/tox-dev/py-filelock/blob/main/LICENSE.
+
+fsspec Copyright 2025 fsspec developers. The fsspec project can be found at: https://github.com/fsspec/filesystem_spec. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/fsspec/filesystem_spec/blob/main/LICENSE.
+
+ftfy Copyright 2013-2025 Robyn Speer. The ftfy project can be found at: https://github.com/LuminosoInsight/python-ftfy. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/LuminosoInsight/python-ftfy/blob/main/LICENSE.txt.
+
+gitdb Copyright 2025 Michael Trier. The gitdb project can be found at: https://github.com/gitpython-developers/gitdb. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/gitpython-developers/gitdb/blob/main/LICENSE.
+
+GitPython Copyright 2025 Michael Trier. The GitPython project can be found at: https://github.com/gitpython-developers/GitPython. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/gitpython-developers/GitPython/blob/main/LICENSE.
+
+gradio Copyright 2025 Gradio contributors. The gradio project can be found at: https://github.com/gradio-app/gradio. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/gradio-app/gradio/blob/main/LICENSE.
+
+gradio-client Copyright 2025 Gradio contributors. The gradio-client project can be found at: https://github.com/gradio-app/gradio-client. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/gradio-app/gradio-client/blob/main/LICENSE.
+
+groovy Copyright 2025 D. E. Miller. The groovy project can be found at: https://github.com/dmiller/groovy. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/dmiller/groovy/blob/master/LICENSE.
+
+grpcio Copyright 2014-2025 Google LLC. The grpcio project can be found at: https://github.com/grpc/grpc. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/grpc/grpc/blob/master/LICENSE.
+
+h11 Copyright 2017-2025 Nathaniel J. Smith. The h11 project can be found at: https://github.com/python-hyper/h11. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python-hyper/h11/blob/master/LICENSE.
+
+hf-xet Copyright 2023-2025 Hugging Face. The hf-xet project can be found at: https://github.com/huggingface/hf-xet. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/hf-xet/blob/main/LICENSE.
+
+httpcore Copyright 2025 Encode OSS Ltd. The httpcore project can be found at: https://github.com/encode/httpcore. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/encode/httpcore/blob/master/LICENSE.
+
+httpx Copyright 2025 Encode OSS Ltd. The httpx project can be found at: https://github.com/encode/httpx. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/encode/httpx/blob/master/LICENSE.
+
+huggingface-hub Copyright 2021-2025 Hugging Face, Inc. The huggingface-hub project can be found at: https://github.com/huggingface/huggingface_hub. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/huggingface_hub/blob/main/LICENSE.
+
+idna Copyright 2015-2025 David Reid. The idna project can be found at: https://github.com/kjd/idna. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/kjd/idna/blob/master/LICENSE.rst.
+
+imageio Copyright 2014-2025 Imageio contributors. The imageio project can be found at: https://github.com/imageio/imageio. This software is licensed under the BSD 2-Clause "Simplified" License. A copy of the license can be found at: https://github.com/imageio/imageio/blob/main/LICENSE.
+
+importlib-metadata Copyright 2018-2025 Jason R. Coombs. The importlib-metadata project can be found at: https://github.com/python/importlib_metadata. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/python/importlib_metadata/blob/main/LICENSE.
+
+Jinja2 Copyright 2007-2025 Armin Ronacher. The Jinja2 project can be found at: https://github.com/pallets/jinja. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/pallets/jinja/blob/main/LICENSE.rst.
+
+lpips Copyright 2025 lpips contributors. The lpips project can be found at: https://github.com/richzhang/PerceptualSimilarity. This software is licensed under the BSD 2-Clause "Simplified" License. A copy of the license can be found at: https://github.com/richzhang/PerceptualSimilarity/blob/master/LICENSE.
+
+markdown Copyright 2007-2025 Python Markdown Team. The markdown project can be found at: https://github.com/Python-Markdown/markdown. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/Python-Markdown/markdown/blob/master/LICENSE.md.
+
+markdown-it-py Copyright 2014-2025 Vitaly Puzrin. The markdown-it-py project can be found at: https://github.com/executablebooks/markdown-it-py. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/executablebooks/markdown-it-py/blob/main/LICENSE.
+
+MarkupSafe Copyright 2010-2025 Armin Ronacher. The MarkupSafe project can be found at: https://github.com/pallets/markupsafe. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/pallets/markupsafe/blob/main/LICENSE.rst.
+
+mdurl Copyright 2015-2025 Vitaly Puzrin. The mdurl project can be found at: https://github.com/executablebooks/mdurl. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/executablebooks/mdurl/blob/main/LICENSE.
+
+mpmath Copyright 2025 Fredrik Johansson. The mpmath project can be found at: https://github.com/fredrik-johansson/mpmath. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/fredrik-johansson/mpmath/blob/master/LICENSE.
+
+networkx Copyright 2004-2025 NetworkX Developers. The networkx project can be found at: https://github.com/networkx/networkx. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/networkx/networkx/blob/main/LICENSE.txt.
+
+numpy Copyright 2005-2025 NumPy Developers. The numpy project can be found at: https://github.com/numpy/numpy. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/numpy/numpy/blob/main/LICENSE.txt.
+
+nvidia-cublas-cu12 Copyright 2025 NVIDIA Corporation. The nvidia-cublas-cu12 project can be found at: https://developer.nvidia.com/cublas. This software is licensed under a commercial license. A copy of the license can be found at: https://docs.nvidia.com/cuda/archive/13.0.0/eula/contents.html#.
+
+nvitop Copyright 2025 nvitop contributors. The nvitop project can be found at: https://github.com/XuehaiPan/nvitop. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/XuehaiPan/nvitop/blob/main/LICENSE.
+
+opencv-python Copyright 2025 Open Source Computer Vision Foundation. The opencv-python project can be found at: https://github.com/opencv/opencv-python. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/opencv/opencv-python/blob/main/LICENSE.txt.
+
+orjson Copyright 2025 ijl. The orjson project can be found at: https://github.com/ijl/orjson. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/ijl/orjson/blob/master/LICENSE.
+
+packaging Copyright 2025 Donald Stufft and individual contributors. The packaging project can be found at: https://github.com/pypa/packaging. This software is licensed under the BSD 2-Clause "Simplified" License. A copy of the license can be found at: https://github.com/pypa/packaging/blob/main/LICENSE.
+
+pandas Copyright 2025 The pandas development team. The pandas project can be found at: https://github.com/pandas-dev/pandas. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/pandas-dev/pandas/blob/main/LICENSE.
+
+peft Copyright 2025 The HuggingFace Inc. team. The peft project can be found at: https://github.com/huggingface/peft. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/peft/blob/main/LICENSE.
+
+pillow Copyright 2025 Jeffrey A. Clark and contributors. The pillow project can be found at: https://github.com/python-pillow/Pillow. This software is licensed under the MIT-CMU License. A copy of the license can be found at: https://raw.githubusercontent.com/python-pillow/Pillow/main/LICENSE.
+
+platformdirs Copyright 2025 Hanno Schlichting. The platformdirs project can be found at: https://github.com/platformdirs/platformdirs. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/platformdirs/platformdirs/blob/main/LICENSE.
+
+protobuf Copyright 2025 Google LLC. The protobuf project can be found at: https://github.com/protocolbuffers/protobuf. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/protocolbuffers/protobuf/blob/main/LICENSE.
+
+psutil Copyright 2025 Giampaolo Rodola. The psutil project can be found at: https://github.com/giampaolo/psutil. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/giampaolo/psutil/blob/master/LICENSE.
+
+pydantic Copyright 2025 Pydantic Community. The pydantic project can be found at: https://github.com/pydantic/pydantic. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/pydantic/pydantic/blob/main/LICENSE.
+
+pydantic-core Copyright 2025 Pydantic Community. The pydantic-core project can be found at: https://github.com/pydantic/pydantic-core. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/pydantic/pydantic-core/blob/main/LICENSE.
+
+pydub Copyright 2025 Karl Helgason. The pydub project can be found at: https://github.com/jiaaro/pydub. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/jiaaro/pydub/blob/master/LICENSE.txt.
+
+pygments Copyright 2025 Georg Brandl. The pygments project can be found at: https://github.com/pygments/pygments. This software is licensed under the BSD 2-Clause "Simplified" License. A copy of the license can be found at: https://github.com/pygments/pygments/blob/master/LICENSE.
+
+python-dateutil Copyright 2025 T. Marin. The python-dateutil project can be found at: https://github.com/dateutil/dateutil. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/dateutil/dateutil/blob/main/LICENSE.
+
+python-multipart Copyright 2025 Encode OSS Ltd. The python-multipart project can be found at: https://github.com/base-knowledge/python-multipart. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/base-knowledge/python-multipart/blob/master/LICENSE.
+
+pytz Copyright 2025 Stuart Bishop. The pytz project can be found at: https://github.com/newfies-dialer/pytz. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/newfies-dialer/pytz/blob/main/LICENSE.txt.
+
+pyyaml Copyright 2025 Ingy dot Net. The pyyaml project can be found at: https://github.com/yaml/pyyaml. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/yaml/pyyaml/blob/master/LICENSE.
+
+regex Copyright 2024-2025 Matthew Barnett. The regex project can be found at: https://github.com/mrabarnett/mrab-regex. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/mrabarnett/mrab-regex/blob/master/LICENSE.
+
+requests Copyright 2025 Kenneth Reitz. The requests project can be found at: https://github.com/psf/requests. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/psf/requests/blob/main/LICENSE.
+
+rich Copyright 2025 Will McGugan. The rich project can be found at: https://github.com/Textualize/rich. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/Textualize/rich/blob/master/LICENSE.
+
+ruff Copyright 2022-2025 Astral Software, Inc. The ruff project can be found at: https://github.com/astral-sh/ruff. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/astral-sh/ruff/blob/main/LICENSE.
+
+safehttpx Copyright 2025 Safehttpx contributors. The safehttpx project can be found at: https://github.com/safehttpx/safehttpx. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/safehttpx/safehttpx/blob/main/LICENSE.
+
+safetensors Copyright 2022-2025 Hugging Face, Inc. The safetensors project can be found at: https://github.com/huggingface/safetensors. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/safetensors/blob/main/LICENSE.
+
+scipy Copyright 2001-2025 SciPy Developers. The scipy project can be found at: https://github.com/scipy/scipy. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/scipy/scipy/blob/main/LICENSE.txt.
+
+semantic-version Copyright 2011-2025 Ben Timby. The semantic-version project can be found at: https://github.com/rbarrois/python-semanticversion. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/rbarrois/python-semanticversion/blob/master/LICENSE.
+
+sentencepiece Copyright 2025 Google LLC. The sentencepiece project can be found at: https://github.com/google/sentencepiece. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/google/sentencepiece/blob/master/LICENSE.
+
+sentry-sdk Copyright 2025 Sentry. The sentry-sdk project can be found at: https://github.com/getsentry/sentry-python. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/getsentry/sentry-python/blob/master/LICENSE.
+
+shellingham Copyright 2025 L. J. de Jager. The shellingham project can be found at: https://github.com/sarugaku/shellingham. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/sarugaku/shellingham/blob/master/LICENSE.
+
+six Copyright 2010-2025 Benjamin Peterson. The six project can be found at: https://github.com/benjaminp/six. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/benjaminp/six/blob/master/LICENSE.
+
+smmap Copyright 2025 Michael Trier. The smmap project can be found at: https://github.com/gitpython-developers/smmap. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/gitpython-developers/smmap/blob/main/LICENSE.
+
+sniffio Copyright 2025 Nathaniel J. Smith. The sniffio project can be found at: https://github.com/python-trio/sniffio. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python-trio/sniffio/blob/master/LICENSE.
+
+starlette Copyright 2018-2025 Encode OSS Ltd. The starlette project can be found at: https://github.com/encode/starlette. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/encode/starlette/blob/master/LICENSE.
+
+sympy Copyright 2025 SymPy Development Team. The sympy project can be found at: https://github.com/sympy/sympy. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/sympy/sympy/blob/master/LICENSE.
+
+tensorboard Copyright 2025 Google LLC. The tensorboard project can be found at: https://github.com/tensorflow/tensorboard. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/tensorflow/tensorboard/blob/master/LICENSE.
+
+tensorboard-data-server Copyright 2025 Google LLC. The tensorboard-data-server project can be found at: https://github.com/tensorflow/tensorboard-data-server. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/tensorflow/tensorboard-data-server/blob/master/LICENSE.
+
+tokenizers Copyright 2025 Hugging Face, Inc. The tokenizers project can be found at: https://github.com/huggingface/tokenizers. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/tokenizers/blob/main/LICENSE.
+
+tomlkit Copyright 2025 Sébastien Eustace. The tomlkit project can be found at: https://github.com/sdispater/tomlkit. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/sdispater/tomlkit/blob/master/LICENSE.
+
+torch Copyright 2025 Meta AI and the PyTorch Foundation. The torch project can be found at: https://github.com/pytorch/pytorch. This software is licensed under the BSD 3-Clause "New" or "Revised" License. A copy of the license can be found at: https://github.com/pytorch/pytorch/blob/master/LICENSE.
+
+torchvision Copyright 2025 Facebook, Inc. and its affiliates. The torchvision project can be found at: https://github.com/pytorch/vision. This software is licensed under the BSD 3-Clause "New" or "Revised" License. A copy of the license can be found at: https://github.com/pytorch/vision/blob/main/LICENSE.
+
+tqdm Copyright 2025 tqdm contributors. The tqdm project can be found at: https://github.com/tqdm/tqdm. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/tqdm/tqdm/blob/master/LICENCE.
+
+transformers Copyright 2025 Hugging Face, Inc. The transformers project can be found at: https://github.com/huggingface/transformers. This software is licensed under the Apache License, Version 2.0. A copy of the license can be found at: https://github.com/huggingface/transformers/blob/main/LICENSE.
+
+triton Copyright 2025 OpenAI. The triton project can be found at: https://github.com/openai/triton. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/openai/triton/blob/main/LICENSE.
+
+typer Copyright 2025 Sebastian Ramirez. The typer project can be found at: https://github.com/tiangolo/typer. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/tiangolo/typer/blob/master/LICENSE.
+
+typing-extensions Copyright 2025 Python Software Foundation. The typing-extensions project can be found at: https://github.com/python/typing_extensions. This software is licensed under the Python Software Foundation License Version 2. A copy of the license can be found at: https://docs.python.org/3/license.html.
+
+typing-inspection Copyright 2025 typing-inspection authors. The typing-inspection project can be found at: https://github.com/python/typing_inspection. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python/typing_inspection/blob/main/LICENSE.
+
+tzdata Copyright 2025 IANA. The tzdata project can be found at: https://www.iana.org/time-zones. This data is in the Public Domain, see https://data.iana.org/time-zones/tz-link.html.
+
+urllib3 Copyright 2025 urllib3 contributors. The urllib3 project can be found at: https://github.com/urllib3/urllib3. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/urllib3/urllib3/blob/main/LICENSE.txt.
+
+uvicorn Copyright 2025 Encode OSS Ltd. The uvicorn project can be found at: https://github.com/encode/uvicorn. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/encode/uvicorn/blob/master/LICENSE.md.
+
+wandb Copyright 2025 Weights & Biases. The wandb project can be found at: https://github.com/wandb/wandb. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/wandb/wandb/blob/main/LICENSE.
+
+wcwidth Copyright 2025 J. Quast. The wcwidth project can be found at: https://github.com/jquast/wcwidth. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/jquast/wcwidth/blob/master/LICENSE.txt.
+
+websockets Copyright 2025 A. Q. The websockets project can be found at: https://github.com/aaugustin/websockets. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/aaugustin/websockets/blob/main/LICENSE.
+
+werkzeug Copyright 2025 Armin Ronacher. The werkzeug project can be found at: https://github.com/pallets/werkzeug. This software is licensed under the BSD 3-Clause License. A copy of the license can be found at: https://github.com/pallets/werkzeug/blob/main/LICENSE.rst.
+
+zipp Copyright 2025 Jason R. Coombs. The zipp project can be found at: https://github.com/python-zlibs/zipp. This software is licensed under the MIT License. A copy of the license can be found at: https://github.com/python-zlibs/zipp/blob/main/LICENSE.
+
+
+ 
