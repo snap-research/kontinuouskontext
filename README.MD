@@ -123,6 +123,7 @@ accelerate launch modulation_train_dreambooth_lora_flux_kontext.py \
   --seed="0" 2>&1 | tee logs/${RUN_NAME}.log
 ```
 
+```
 @article{parihar2025kontinuouskontext,
   title     = {Kontinuous Kontext: Continuous Strength Control for Instruction-based Image Editing},
   author    = {Parihar, Rishubh and Patashnik, Or and Ostashev, Daniil and Babu, R. Venkatesh and Cohen-Or, Daniel and Wang, Kuan-Chieh Jackson},
@@ -130,5 +131,6 @@ accelerate launch modulation_train_dreambooth_lora_flux_kontext.py \
   year      = {2025},
   url       = {https://arxiv.org/abs/2510.08532}
 }
+```
 
   
