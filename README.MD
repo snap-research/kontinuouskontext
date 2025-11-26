@@ -36,6 +36,17 @@ Instruction-based image editing offers a powerful and intuitive way to manipulat
 
 ---
 
+## 📢 Updates
+
+We have a few extras queued up for release—this section will grow as they roll out.
+
+- [x] Training and inference code release  
+- [ ] Release of generated dataset for model training
+- [ ] Scripts for dataset generation pipeline
+
+
+---
+
 ## 💡 Inference
 
 Follow these steps to run inference with a pretrained model.
@@ -86,18 +97,9 @@ Spin up the interactive Gradio playground to try your own examples without leavi
 
 ---
 
-## 📢 Coming Soon
-
-We have a few extras queued up for release—this section will grow as they roll out.
-
-- [ ] Generated Dataset for model training(full training set + metadata)
-- [ ] Scripts for dataset generation pipeline
-
----
-
 # 🏋️ Kontinuous Kontext: Model Training
 
-We build our model on [Flux Kontext](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) an instruction based image editing model. For training you have to download the Flux Kontext model and the training dataset as discussed below.
+We build our model on Flux Kontext (link), an instruction based image editing model. For training you have to download the Flux Kontext model and the training dataset as discussed below.
 
 ---
 
@@ -124,8 +126,6 @@ bash run_modulation_train.sh
 ```
 
 Your training logs will be saved inside the ./logs/ folder.
-
-## 4. Training Script (run_modulaiton_train.sh)
 
 Here is the full content of the training script, which includes all hyperparameters used for our model:
 
@@ -169,3 +169,4 @@ accelerate launch modulation_train_dreambooth_lora_flux_kontext.py \
   url       = {https://arxiv.org/abs/2510.08532}
 }
 ```
+  
