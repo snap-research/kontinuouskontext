@@ -5,7 +5,7 @@ This repository contains the **official codebase* for **Kontinuous Kontext**, a 
 
 Snap Research · Tel Aviv University · IISc Bangalore  
 
-## [**arXiv**](https://arxiv.org/abs/2510.08532) · [Project Page](https://snapresearch.github.io/kontinuouskontext/) · [Demo](https://huggingface.co/spaces/snap-research/KontinuousKontext) 
+## [**arXiv**](https://arxiv.org/abs/2510.08532) · [Project Page](https://snapresearch.github.io/kontinuouskontext/)
 
 ---
 
