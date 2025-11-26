@@ -119,10 +119,10 @@ We trained our model on 8 x NVIDIA A100 (80G) GPU for 110,000 iterations. The tr
 
 ## 3. Run Training
 
-You can start a training run by executing the `run_modulaiton_train.sh` script. The base `FLUX.1-Kontext-dev` model will be downloaded automatically by the script on the first run.
+You can start a training run by executing the `train.sh` script. The base `FLUX.1-Kontext-dev` model will be downloaded automatically by the script on the first run.
 
 ```bash
-bash run_modulation_train.sh
+bash train.sh
 ```
 
 Your training logs will be saved inside the ./logs/ folder.
@@ -132,7 +132,7 @@ Here is the full content of the training script, which includes all hyperparamet
 ```bash
 RUN_NAME="TRAINING_RUN"
 
-accelerate launch modulation_train_dreambooth_lora_flux_kontext.py \
+accelerate launch train_model.py \
   --pretrained_model_name_or_path=black-forest-labs/FLUX.1-Kontext-dev \
   --output_dir=runs/$RUN_NAME \
   --mixed_precision="bf16" \
