@@ -161,6 +161,7 @@ accelerate launch train_model.py \
 ```
 
 --- 
+## BibTeX
 ```
 @article{parihar2025kontinuouskontext,
   title     = {Kontinuous Kontext: Continuous Strength Control for Instruction-based Image Editing},
