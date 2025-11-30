@@ -99,7 +99,7 @@ Spin up the interactive Gradio playground to try your own examples without leavi
 
 # 🏋️ Kontinuous Kontext: Model Training
 
-We build our model on Flux Kontext (link), an instruction based image editing model. For training you have to download the Flux Kontext model and the training dataset as discussed below.
+We build our model on Flux Kontext[https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev], an instruction-based image editing model. For training you have to download the Flux Kontext model and the training dataset as discussed below.
 
 ---
 
