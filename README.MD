@@ -103,8 +103,6 @@ We build our model on [Flux Kontext](https://huggingface.co/black-forest-labs/FL
 
 ---
 
----
-
 ## 1. Dataset
 
 * You can download a sample dataset required for training from [here](https://huggingface.co/datasets/RishubhPar/kontinuous_kontext_sample). We are working on the full dataset and will release it soon. 
