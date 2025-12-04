@@ -41,7 +41,7 @@ Instruction-based image editing offers a powerful and intuitive way to manipulat
 We have a few extras queued up for release—this section will grow as they roll out.
 
 - [x] Training and inference code release  
-- [ ] Release of the generated dataset for model training
+- [ ] Release of the complete dataset for model training
 - [ ] Scripts for dataset generation pipeline
 
 
@@ -99,7 +99,7 @@ Spin up the interactive Gradio playground to try your own examples without leavi
 
 # 🏋️ Kontinuous Kontext: Model Training
 
-We build our model on [Flux Kontext](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev), an instruction-based image editing model. For training you have to download the Flux Kontext model and the training dataset as discussed below.
+We build our model on [Flux Kontext](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev), an instruction-based image editing model. For training, you have to download the Flux Kontext model and the training dataset as discussed below.
 
 ---
 
@@ -116,7 +116,7 @@ We build our model on [Flux Kontext](https://huggingface.co/black-forest-labs/FL
       <img src="assets/Dataset-Sample.png" alt="Sample dataset image stack" width="80%">
     </p>
 
-    * `sample_data_scores_w_scores.json`: Contains the metadata for the slider dataset, including the mage name, edit instruction, lpips scores between adjacent images and the lpips scores between the input and the inversion images for filtering. A sample entry from the .json file is shown below 
+    * `sample_data_scores_w_scores.json`: Contains the metadata for the slider dataset, including the mage name, edit instruction, LPIPS scores between adjacent images, and the LPIPS scores between the input and the inversion images for filtering. A sample entry from the .json file is shown below 
 
     ```
       {
