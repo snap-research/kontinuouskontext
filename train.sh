@@ -7,6 +7,8 @@ accelerate launch train_model.py \
   --output_dir=runs/$RUN_NAME \
   --mixed_precision="bf16" \
   --resolution=512 \
+  --data_json_path="PATH for the json file for the dataset" \
+  --image_dataset_path="Dataset path" \
   --kl_threshold=0.15 \
   --filter="kl-filter-simple" \
   --train_batch_size=1 \
